@@ -938,6 +938,95 @@ h6 {
   transition: all 0.3s ease 0s;
 }
 
+.grow {
+  margin-top: 12.6875rem;
+  padding: 0 0.9375rem;
+}
+
+.grow__container {
+  padding: 4.0625rem 5.6875rem 4rem 4.5rem;
+  background: linear-gradient(270.04deg, #01B8D9 0.05%, #24CEED 97.84%);
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.grow__lines-bg-image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.grow__text-content {
+  max-width: 22.1875rem;
+}
+
+.grow__title {
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 122%;
+  letter-spacing: 0.3px;
+  color: #FFFFFF;
+}
+
+.grow__subtitle {
+  margin-top: 1.25rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 229%;
+  letter-spacing: 0.3px;
+  color: #FFFFFF;
+}
+
+.grow__bottom-container {
+  margin-top: 0.625rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  gap: 0.875rem;
+}
+
+.grow__link {
+  color: #FFFFFF;
+}
+
+.grow__link:hover {
+  text-decoration: underline;
+}
+
+.grow__button {
+  color: #04AADD;
+  padding: 1.125rem 2rem;
+  background-color: #FFFFFF;
+  z-index: 5;
+  max-height: 3.5625rem;
+  border-radius: 4px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  -webkit-box-shadow: -1px 54px 77px -12px rgba(0, 0, 0, 0.35);
+  box-shadow: -1px 54px 77px -12px rgba(0, 0, 0, 0.35);
+}
+
+.grow__button:hover {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  -webkit-box-shadow: -1px 34px 77px -12px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 34px 77px -12px rgba(0, 0, 0, 0.75);
+}
+
 .swiper {
   overflow: hidden;
 }
@@ -1056,6 +1145,14 @@ h6 {
   .reviews {
     margin-top: 14.1vw;
   }
+
+  .grow {
+    margin-top: 14.1vw;
+  }
+
+  .grow__container {
+    padding: 4.51vw 6.32vw 4.44vw 5vw;
+  }
 }
 
 @media (max-width: 50em) {
@@ -1147,6 +1244,10 @@ h6 {
 
   .cards-container__card-description {
     margin-top: 1.38vw;
+  }
+
+  .grow__title {
+    font-size: 3.1vw;
   }
 }
 
@@ -1449,6 +1550,53 @@ h6 {
   .swiper-button-next {
     display: none;
   }
+
+  .grow {
+    margin-top: 12vw;
+  }
+
+  .grow__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 5vw;
+  }
+
+  .grow__text-content {
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 2vw;
+  }
+
+  .grow__title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .grow__subtitle {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .grow__bottom-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 47.99875em) and (any-hover: none) {
@@ -1554,6 +1702,10 @@ h6 {
 
   .brands__image {
     max-width: 6.25rem;
+  }
+
+  .grow__container {
+    padding: 2.5rem 0.625rem;
   }
 }
 

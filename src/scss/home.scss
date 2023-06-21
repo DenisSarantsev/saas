@@ -426,3 +426,114 @@ body {
 .swiper-scrollbar {
 }
 
+//=======GROW========================================================================================
+
+.grow {
+	margin-top: rem(203);
+	padding: 0 rem(15);
+	@media (max-width: em(1440)){
+		margin-top: 14.10vw;
+	}
+	@media (max-width:$mobile){
+		margin-top: 12vw;
+	}
+	&__container {
+		padding: rem(65) rem(91) rem(64) rem(72);
+		background: linear-gradient(270.04deg, #01B8D9 0.05%, #24CEED 97.84%);
+		border-radius: 8px;
+		overflow: hidden;
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		@media (max-width: em(1440)){
+			padding: 4.51vw 6.32vw 4.44vw 5vw;
+		}
+		@media (max-width:$mobile){
+			flex-direction: column;
+			align-items: center;
+			gap: 5vw;
+		}
+		@media (max-width: em(500)){
+			padding: rem(40) rem(10);
+		}
+	}
+	&__lines-bg-image {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+	}
+	&__text-content {
+		max-width: rem(355);
+		@media (max-width:$mobile){
+			max-width: 100%;
+			display: flex; 
+			flex-direction: column;
+			align-items: center;
+			gap: 2vw;
+		}
+	}
+	&__title {
+		font-weight: 700;
+		font-size: rem(36);
+		line-height: 122%;
+		letter-spacing: 0.3px;
+		color: #FFFFFF;
+		@media (max-width: em(1160)){
+			font-size: 3.10vw;
+		}
+		@media (max-width:$mobile){
+			font-size: rem(24);
+			text-align: center;
+		}
+	}
+	&__subtitle {
+		margin-top: rem(20);
+		font-weight: 500;
+		font-size: rem(14);
+		line-height: 229%;
+		letter-spacing: 0.3px;
+		color: #FFFFFF;
+		@media (max-width:$mobile){
+			 margin-top: 0;
+			 text-align: center;
+		}
+	}
+	&__bottom-container {
+		margin-top: rem(10);
+		display: flex;
+		align-items: center;
+		width: 100%;
+		gap: rem(14);
+		@media (max-width:$mobile){
+			justify-content: center;
+			margin-top: 0;
+		}
+	}
+	&__peoples-image {
+	}
+	&__link {
+		color: #FFFFFF;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	&__button {
+		color: $linkColor;
+		padding: rem(18) rem(32);
+		background-color: #FFFFFF;
+		z-index: 5;
+		max-height: rem(57);
+		border-radius: 4px;
+		transition: all 0.3s ease 0s;
+		-webkit-box-shadow: -1px 54px 77px -12px rgba(0,0,0,0.35);
+		-moz-box-shadow: -1px 54px 77px -12px rgba(0,0,0,0.35);
+		box-shadow: -1px 54px 77px -12px rgba(0,0,0,0.35);
+		&:hover {
+			transition: all 0.3s ease 0s;
+			-webkit-box-shadow: -1px 34px 77px -12px rgba(0,0,0,0.75);
+			-moz-box-shadow: -1px 34px 77px -12px rgba(0,0,0,0.75);
+			box-shadow: -1px 34px 77px -12px rgba(0,0,0,0.75);
+		}
+	}
+}
