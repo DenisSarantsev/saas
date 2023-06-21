@@ -1,1 +1,56 @@
 // Заголовки, загальні БЕМ блоки та інше...
+
+.block-text-container {
+	&__main-title {
+		color: $titleColor;
+		font-weight: 700;
+		font-size: rem(36);
+		line-height: 144%;
+		letter-spacing: 0.3px;
+		@media (max-width: em(980)){
+			font-size: 3.67vw;
+		}
+		@media (max-width:$mobile){
+			 text-align: center; 
+		}
+		@media (max-width: em(550)){
+			font-size: rem(20);
+		}
+	}
+	&__main-description {
+		margin-top: rem(24);
+		line-height: 200%;
+		@media (max-width: em(980)){
+			margin-top: 2.45vw;
+			line-height: 180%;
+		}
+		@media (max-width:$mobile){
+			 text-align: center; 
+		}
+		@media (max-width: em(500)){
+			line-height: 160%;
+		}
+	}
+	&__link-container {
+		margin-top: rem(36);
+		display: flex;
+		justify-content: start;
+		align-items: center;
+		@media (max-width: em(980)){
+			margin-top: 3.67vw;
+		}
+		@media (max-width:$mobile){
+			width: 100%;
+			justify-content: center;
+		}
+	}
+	&__link {
+		color: $linkColor;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	&__block-arrow {
+		margin-left: rem(10);
+	}
+}

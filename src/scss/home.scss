@@ -1,4 +1,5 @@
-//====================================================================================================
+//=======BRANDS========================================================================================
+
 .brands {
 	margin-top: rem(128);
 	@media (max-width: em(1440)){
@@ -29,4 +30,69 @@
 	}
 }
 
-//====================================================================================================
+//=======IMPRESSIONS========================================================================================
+
+.impressions {
+	margin-top: rem(205);
+	@media (max-width: em(1440)){
+		margin-top: 14.24vw;
+	}
+	@media (max-width:$mobile){
+		margin-top: 9vw;
+	}
+	&__container {
+		position: relative;
+	}
+	&__arrow-image {
+		position: absolute;
+		top: rem(50);
+		left: 0;
+		@media (max-width: em(1160)){
+			width: 53.53vw;
+			height: 60.09vw;
+			top: 4.31vw;
+		}
+		@media (max-width: em(830)){
+			display: none;
+		}
+	}
+	&__phones-image {
+		position: absolute;
+		top: 0;
+		left: 0;
+		@media (max-width: em(1160)){
+			width: 42.59vw;
+			height: 47.50vw;
+		}
+		@media (max-width:$mobile){
+			display: none;
+		}
+	}
+	&__content-block {
+		position: absolute;
+		right: 0;
+		max-width: rem(485);
+		margin-top: rem(100);
+		@media (max-width: em(980)){
+			max-width: 49.49vw;
+			margin-top: 10.20vw;
+		}
+		@media (max-width: em(830)){
+			margin-top: 5vw;
+		}
+		@media (max-width:$mobile){
+			max-width: 100%;
+			position: relative;
+			margin-top: 0;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
