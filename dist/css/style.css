@@ -664,6 +664,107 @@ body {
   min-width: 28.25rem;
 }
 
+.performance {
+  margin-top: 9.5625rem;
+  padding: 5rem 0;
+  background: rgba(48, 217, 255, 0.1);
+}
+
+.performance__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4.75rem;
+}
+
+.performance__title-block {
+  max-width: 38.5rem;
+  text-align: center;
+}
+
+.cards-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1.25rem;
+}
+
+.cards-container__card {
+  padding: 1.75rem 2.0625rem 1.75rem 1.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border-radius: 8px;
+  max-width: 16.1875rem;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+
+.cards-container__card-icon-container {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cards-container__card-icon-container_red {
+  background: linear-gradient(315.55deg, #EF4444 0%, #FF8989 92.87%);
+}
+
+.cards-container__card-icon-container_blue {
+  background: linear-gradient(318.24deg, #3B82F6 0%, #86B4FF 94.95%);
+}
+
+.cards-container__card-icon-container_yellow {
+  background: linear-gradient(314.44deg, #F59E0B 0%, #FFD285 91.08%);
+}
+
+.cards-container__card-icon-container_green {
+  background: linear-gradient(314.44deg, #14B8A6 0%, #48DFCE 91.08%);
+}
+
+.cards-container__card-title {
+  margin-top: 1.625rem;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+  color: #034D82;
+}
+
+.cards-container__card-description {
+  margin-top: 1rem;
+  font-size: 0.9375rem;
+  line-height: 160%;
+  letter-spacing: 0.3px;
+}
+
 @media (max-width: 90em) {
   .header-main__biggest-bg {
     top: 12.71vw;
@@ -712,6 +813,19 @@ body {
 
   .schedule {
     margin-top: 14.89vw;
+  }
+
+  .performance {
+    margin-top: 10.63vw;
+    padding: 5.56vw 0;
+  }
+
+  .performance__container {
+    gap: 5.28vw;
+  }
+
+  .cards-container__card {
+    padding: 1.94vw 2.29vw 1.94vw 1.94vw;
   }
 }
 
@@ -790,6 +904,29 @@ body {
     right: inherit;
     position: absolute;
     left: 29.375rem;
+  }
+
+  .cards-container__card-title {
+    margin-top: 2.24vw;
+  }
+
+  .cards-container__card-description {
+    margin-top: 1.38vw;
+  }
+}
+
+@media (max-width: 68.75em) {
+  .cards-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+  }
+
+  .cards-container__card {
+    max-width: 100%;
   }
 }
 
@@ -1024,11 +1161,24 @@ body {
     max-width: 100%;
     min-width: 0rem;
   }
+
+  .cards-container__card {
+    padding: 0.9375rem;
+  }
 }
 
 @media (max-width: 47.99875em) and (any-hover: none) {
   .icon-menu {
     cursor: default;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .cards-container {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
   }
 }
 
@@ -1104,5 +1254,17 @@ body {
 
   .brands__image {
     max-width: 6.25rem;
+  }
+}
+
+@media (max-width: 28.125em) {
+  .cards-container__card {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .cards-container__card-description {
+    text-align: center;
   }
 }

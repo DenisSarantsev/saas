@@ -138,8 +138,115 @@ body {
 	}
 }
 
+//=======PERFORMANCE========================================================================================
 
+.performance {
+	margin-top: rem(153);
+	padding: rem(80) 0;
+	background: rgba(48, 217, 255, 0.1);
+	@media (max-width: em(1440)){
+		margin-top: 10.63vw;
+		padding: 5.56vw 0;
+	}
+	&__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: rem(76);
+		@media (max-width: em(1440)){
+			gap: 5.28vw;
+		}
+	}
+	&__title-block {
+		max-width: rem(616);
+		text-align: center;
+	}
+	&__cards-container {
+	}
+}
 
+.cards-container {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	gap: rem(20);
+	@media (max-width: em(1100)){
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto auto;
+	}
+	@media (max-width: em(600)){
+		grid-template-columns: 1fr ;
+		grid-template-rows: auto;
+	}
+	&__card {
+		padding: rem(28) rem(33) rem(28) rem(28);
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		border-radius: 8px;
+		max-width: rem(259);
+		width: 100%;
+		background-color: #FFFFFF;
+		@media (max-width: em(1440)){
+			padding: 1.94vw 2.29vw 1.94vw 1.94vw;
+		}
+		@media (max-width: em(1100)){
+			max-width: 100%;
+		}
+		@media (max-width:$mobile){
+			padding: rem(15);
+		}
+		@media (max-width: em(450)){
+			align-items: center;
+		}
+	}
+	&__card-icon-container {
+			width: rem(56);
+			height: rem(56);
+			border-radius: 8px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		&_red {
+			background: linear-gradient(315.55deg, #EF4444 0%, #FF8989 92.87%);
+		}
+		&_blue {
+			background: linear-gradient(318.24deg, #3B82F6 0%, #86B4FF 94.95%);
+		}
+		&_yellow {
+			background: linear-gradient(314.44deg, #F59E0B 0%, #FFD285 91.08%);
+		}
+		&_green {
+			background: linear-gradient(314.44deg, #14B8A6 0%, #48DFCE 91.08%);
+		}
+	}
+	&__card-icon {
+	}
+	&__card-title {
+		margin-top: rem(26);
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 160%;
+		letter-spacing: 0.2px;
+		color: $titleColor;
+		@media (max-width: em(1160)){
+			margin-top: 2.24vw;
+		}
+	}
+	&__card-description {
+		margin-top: rem(16);
+		font-size: rem(15);
+		line-height: 160%;
+		letter-spacing: 0.3px;
+		@media (max-width: em(1160)){
+			margin-top: 1.38vw;
+		}
+		@media (max-width: em(450)){
+			text-align: center;
+		}
+	}
+}
 
 
 
