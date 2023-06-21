@@ -1,10 +1,16 @@
 //====================================================================================================
 .footer {
-	margin-top: rem(1000);
+	margin-top: rem(200);
 	background: #081315;
 	padding: rem(80) 0;
+	@media (max-width: em(1440)){
+		margin-top: 13.89vw;
+	}
 	@media (max-width: em(1160)){
 		padding: 6.90vw 0;
+	}
+	@media (max-width:$mobile){
+		margin-top: 12vw;
 	}
 	&__container {
 		display: flex;
