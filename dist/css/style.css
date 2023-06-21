@@ -522,6 +522,26 @@ h6 {
   line-height: 130%;
 }
 
+.brands {
+  margin-top: 8rem;
+}
+
+.brands__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1.875rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.brands__image {
+  height: 100%;
+}
+
 @media (max-width: 90em) {
   .header-main__biggest-bg {
     top: 12.71vw;
@@ -558,6 +578,10 @@ h6 {
     width: 12.36vw;
     height: 5.28vw;
     opacity: 0.1;
+  }
+
+  .brands {
+    margin-top: 8.89vw;
   }
 }
 
@@ -608,6 +632,15 @@ h6 {
 
   .footer-bottom {
     margin-top: 8.36vw;
+  }
+
+  .brands__container {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-column-gap: 2.59vw;
+       -moz-column-gap: 2.59vw;
+            column-gap: 2.59vw;
+    row-gap: 1.25rem;
   }
 }
 
@@ -725,6 +758,16 @@ h6 {
         -ms-transform: rotate(45deg);
             transform: rotate(45deg);
   }
+
+  .brands__container {
+    -webkit-column-gap: 1.25rem;
+       -moz-column-gap: 1.25rem;
+            column-gap: 1.25rem;
+  }
+
+  .brands__image {
+    max-width: 17.19vw;
+  }
 }
 
 @media (max-width: 47.99875em) and (any-hover: none) {
@@ -777,5 +820,9 @@ h6 {
         -ms-flex-align: center;
             align-items: center;
     gap: 1.25rem;
+  }
+
+  .brands__image {
+    max-width: 6.25rem;
   }
 }
