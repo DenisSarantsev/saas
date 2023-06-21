@@ -170,6 +170,27 @@ h6 {
           align-items: center;
 }
 
+.block-text-container__list {
+  margin-top: 1.875rem;
+  gap: 1.5625rem;
+}
+
+.block-text-container__list-item {
+  position: relative;
+  line-height: 130%;
+  letter-spacing: 0.3px;
+  padding-left: 1.75rem;
+}
+
+.block-text-container__list-item::before {
+  content: url("../img/schedule/list-point-icon.svg");
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1rem;
+  height: 1rem;
+}
+
 .block-text-container__link {
   color: #04AADD;
 }
@@ -560,6 +581,10 @@ h6 {
   line-height: 130%;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .brands {
   margin-top: 8rem;
 }
@@ -595,7 +620,7 @@ h6 {
 }
 
 .impressions__phones-image {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
 }
@@ -603,8 +628,40 @@ h6 {
 .impressions__content-block {
   position: absolute;
   right: 0;
+  top: 0;
   max-width: 30.3125rem;
   margin-top: 6.25rem;
+}
+
+.schedule {
+  margin-top: 14.375rem;
+}
+
+.schedule__container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.schedule__pc-image {
+  position: relative;
+  top: 0;
+  right: 0;
+}
+
+.schedule__content-block {
+  position: relative;
+  left: 0;
+  max-width: 28.25rem;
+  min-width: 28.25rem;
 }
 
 @media (max-width: 90em) {
@@ -646,11 +703,15 @@ h6 {
   }
 
   .brands {
-    margin-top: 8.89vw;
+    margin-top: 10vw;
   }
 
   .impressions {
     margin-top: 14.24vw;
+  }
+
+  .schedule {
+    margin-top: 14.89vw;
   }
 }
 
@@ -722,6 +783,14 @@ h6 {
     width: 42.59vw;
     height: 47.5vw;
   }
+
+  .schedule__pc-image {
+    width: 61.03vw;
+    height: 35.78vw;
+    right: inherit;
+    position: absolute;
+    left: 29.375rem;
+  }
 }
 
 @media (max-width: 62.5em) {
@@ -776,6 +845,28 @@ h6 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+
+  .block-text-container__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 3.91vw;
+    gap: 3.26vw;
+  }
+
+  .block-text-container__list-item::before {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  .block-text-container__list-item {
+    padding-left: 1.4375rem;
   }
 
   .header__top {
@@ -884,6 +975,18 @@ h6 {
             transform: rotate(45deg);
   }
 
+  .footer-bottom {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 3.13vw;
+    margin-top: 5vw;
+  }
+
   .brands__container {
     -webkit-column-gap: 1.25rem;
        -moz-column-gap: 1.25rem;
@@ -895,7 +998,7 @@ h6 {
   }
 
   .impressions {
-    margin-top: 9vw;
+    margin-top: 12vw;
   }
 
   .impressions__phones-image {
@@ -906,6 +1009,20 @@ h6 {
     max-width: 100%;
     position: relative;
     margin-top: 0;
+  }
+
+  .schedule {
+    margin-top: 12vw;
+  }
+
+  .schedule__pc-image {
+    display: none;
+    overflow: hidden;
+  }
+
+  .schedule__content-block {
+    max-width: 100%;
+    min-width: 0rem;
   }
 }
 
@@ -969,6 +1086,20 @@ h6 {
         -ms-flex-align: center;
             align-items: center;
     gap: 1.25rem;
+  }
+
+  .footer-bottom__heart-container {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .footer-bottom__heart-container img {
+    width: 1.375rem;
+    height: 1.25rem;
+  }
+
+  .footer-bottom__copyright {
+    font-size: 0.875rem;
   }
 
   .brands__image {

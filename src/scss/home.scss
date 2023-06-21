@@ -1,9 +1,14 @@
+body {
+	overflow-x:hidden;
+}
+
+
 //=======BRANDS========================================================================================
 
 .brands {
 	margin-top: rem(128);
 	@media (max-width: em(1440)){
-		margin-top: 8.89vw;
+		margin-top: 10vw;
 	}
 	&__container {
 		display: flex;
@@ -38,7 +43,7 @@
 		margin-top: 14.24vw;
 	}
 	@media (max-width:$mobile){
-		margin-top: 9vw;
+		margin-top: 12vw;
 	}
 	&__container {
 		position: relative;
@@ -57,7 +62,7 @@
 		}
 	}
 	&__phones-image {
-		position: absolute;
+		position: relative;
 		top: 0;
 		left: 0;
 		@media (max-width: em(1160)){
@@ -71,6 +76,7 @@
 	&__content-block {
 		position: absolute;
 		right: 0;
+		top: 0;
 		max-width: rem(485);
 		margin-top: rem(100);
 		@media (max-width: em(980)){
@@ -88,7 +94,49 @@
 	}
 }
 
+//=======SCHEDULE========================================================================================
 
+.schedule {
+	margin-top: rem(230);
+	@media (max-width: em(1440)){
+		margin-top: 14.89vw;
+	}
+	@media (max-width:$mobile){
+		 margin-top: 12vw; 
+	}
+	&__container {
+		position: relative;
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: left;
+	}
+	&__pc-image {
+		position: relative;
+		top: 0;
+		right: 0;
+		@media (max-width: em(1160)){
+			width: 61.03vw;
+			height: 35.78vw;
+			right: inherit;
+			position: absolute;
+			left: rem(470);
+		}
+		@media (max-width:$mobile){
+			 display: none;
+			 overflow: hidden;
+		}
+	}
+	&__content-block {
+		position: relative;
+		left: 0;
+		max-width: rem(452);
+		min-width: rem(452);
+		@media (max-width:$mobile){
+			 max-width: 100%;
+			 min-width: rem(0);
+		}
+	}
+}
 
 
 

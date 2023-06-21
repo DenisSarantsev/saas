@@ -44,6 +44,38 @@
 			justify-content: center;
 		}
 	}
+	&__list {
+		margin-top: rem(30);
+		gap: rem(25);
+		@media (max-width:$mobile){
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			margin-top: 3.91vw;
+			gap: 3.26vw;
+		}
+	}
+	&__list-item {
+		position: relative;
+		line-height: 130%;
+		letter-spacing: 0.3px;
+		padding-left: rem(28);
+		&::before {
+			content: url("@img/schedule/list-point-icon.svg");
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: rem(16);
+			height: rem(16);
+			@media (max-width:$mobile){
+				width: rem(12);
+				height: rem(12);
+			}
+		}
+		@media (max-width:$mobile){
+			padding-left: rem(23);
+		}
+	}
 	&__link {
 		color: $linkColor;
 		&:hover {

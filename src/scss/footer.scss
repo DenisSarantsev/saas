@@ -132,6 +132,12 @@
 	@media (max-width: em(1160)){
 		margin-top: 8.36vw;
 	}
+	@media (max-width:$mobile){
+		flex-direction: row;
+		justify-content: center;
+		gap: 3.13vw;
+		margin-top: 5vw;
+	}
 	&__heart-container {
 		width: rem(56);
 		height: rem(56);
@@ -140,10 +146,23 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		@media (max-width: em(500)){
+			width: rem(40);
+			height: rem(40);
+		}
+		& img {
+			@media (max-width: em(500)){
+				width: rem(22);
+				height: rem(20);
+			}
+		}
 	}
 	&__copyright {
 		font-weight: 700;
 		line-height: 130%;
+		@media (max-width: em(500)){
+			font-size: rem(14);
+		}
 	}
 }
 
