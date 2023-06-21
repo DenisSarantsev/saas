@@ -401,6 +401,8 @@ h6 {
   display: -ms-flexbox;
   display: flex;
   gap: 0.375rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .socials-container > * {
@@ -456,9 +458,11 @@ h6 {
   font-size: 1.125rem;
   line-height: 127%;
   color: #FFFFFF;
+  list-style: none;
 }
 
 .spollers__body {
+  margin-top: 2.0625rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -557,11 +561,61 @@ h6 {
   }
 }
 
+@media (max-width: 50em) {
+  .footer-top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 5vw;
+  }
+
+  .footer-top__socials-block {
+    gap: 3.91vw;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    max-width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .footer-top__description {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 100%;
+  }
+}
+
 @media (max-width: 72.5em) {
   .header-main__circle-image {
     top: 3.45vw;
     left: inherit;
     right: 1.875rem;
+  }
+
+  .footer {
+    padding: 6.9vw 0;
+  }
+
+  .footer-bottom {
+    margin-top: 8.36vw;
+  }
+}
+
+@media (max-width: 62.5em) {
+  .footer-top {
+    -webkit-column-gap: 0.625rem;
+       -moz-column-gap: 0.625rem;
+            column-gap: 0.625rem;
   }
 }
 
@@ -676,6 +730,31 @@ h6 {
 @media (max-width: 47.99875em) and (any-hover: none) {
   .icon-menu {
     cursor: default;
+  }
+}
+
+@media (max-width: 36.25em) {
+  .spollers {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1.25rem;
+  }
+
+  .spollers__item {
+    text-align: center;
+  }
+
+  .spollers__body {
+    margin-top: 0.9375rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1.25rem;
   }
 }
 

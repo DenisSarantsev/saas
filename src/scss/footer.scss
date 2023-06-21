@@ -3,6 +3,9 @@
 	margin-top: rem(500);
 	background: #081315;
 	padding: rem(80) 0;
+	@media (max-width: em(1160)){
+		padding: 6.90vw 0;
+	}
 	&__container {
 		display: flex;
 		flex-direction: column;
@@ -17,18 +20,37 @@
 	display: flex;
 	width: 100%;
 	column-gap: rem(30);
+	@media (max-width: em(1000)){
+		column-gap: rem(10);
+	}
+	@media (max-width: em(800)){
+		 flex-direction: column; 
+		 gap: 5vw;
+	}
 	&__socials-block {
 		max-width: rem(263);
 		display: flex;
 		flex-direction: column;
 		align-items: start;
 		gap: rem(30);
+		@media (max-width: em(800)){
+			 gap: 3.91vw; 
+			 flex-direction: row;
+			 max-width: 100%;
+			 align-items: center;
+			 justify-content: space-between;
+			 flex-wrap: wrap;
+		}
 	}
 	&__logo {
 	}
 	&__description {
 		line-height: 175%;
 		color: #D3D6D8;
+		@media (max-width: em(800)){
+			 order: 1; 
+			 width: 100%;
+		}
 	}
 	&__socials-container {
 	}
@@ -38,6 +60,7 @@
 .socials-container {
 	display: flex;
 	gap: rem(6);
+	flex-wrap: wrap;
 	&>* {
 		width: rem(40);
 		height: rem(40);
@@ -57,24 +80,39 @@
 	display: flex;
 	width: 100%;
 	justify-content: space-between;
+	@media (max-width: em(580)){
+		flex-direction: column;
+		align-items: center;
+		gap: rem(20);
+	}
 	&__item {
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
 		gap: rem(33);
+		@media (max-width: em(580)){
+			text-align: center;
+		}
 	}
 	&__title {
 		font-weight: 700;
 		font-size: rem(18);
 		line-height: 127%;
 		color: #FFFFFF;
+		list-style: none;
 	}
 	&__body {
+		margin-top: rem(33);
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
 		gap: rem(25);
 		transition: all 0.3s ease 0s;
+		@media (max-width: em(580)){
+			margin-top: rem(15);
+			align-items: center;
+			gap: rem(20);
+		}
 		&>* {
 			&:hover {
 				transition: all 0.3s ease 0s;
@@ -91,6 +129,9 @@
 	flex-direction: column;
 	align-items: center;
 	width: 100%;
+	@media (max-width: em(1160)){
+		margin-top: 8.36vw;
+	}
 	&__heart-container {
 		width: rem(56);
 		height: rem(56);
