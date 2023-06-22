@@ -8,7 +8,7 @@
 			@@include('html/_header.htm',{})
 			<main class="page">
 				<section class="brands">
-					<div class="brands__container">
+					<div data-watch class="brands__container">
 						<img class="brands__image" src="@img/brands/slack.jpg" alt="slack logo">
 						<img class="brands__image" src="@img/brands/netflix.jpg" alt="netflix logo">
 						<img class="brands__image" src="@img/brands/google.jpg" alt="google logo">
@@ -18,9 +18,9 @@
 				</section>
 				<section class="impressions">
 					<div class="impressions__container">
-						<img class="impressions__arrow-image" src="@img/impressions/arrow.jpg" alt="arrow decor image">
-						<img class="impressions__phones-image" src="@img/impressions/phones.png" alt="phones dcor image">
-						<div class="impressions__content-block block-text-container">
+						<img data-watch class="impressions__arrow-image" src="@img/impressions/arrow.jpg" alt="arrow decor image">
+						<img data-watch class="impressions__phones-image" src="@img/impressions/phones.png" alt="phones dcor image">
+						<div data-watch class="impressions__content-block block-text-container">
 							<h2 class="block-text-container__main-title">
 								Measure Impressions and Reach Post
 							</h2>
@@ -37,8 +37,8 @@
 				</section>
 				<section class="schedule">
 					<div class="schedule__container">
-						<img class="schedule__pc-image" src="@img/schedule/macbook.jpg" alt="personal computer background image">
-						<div class="schedule__content-block block-text-container">
+						<img data-watch data-watch-threshold="0.01" class="schedule__pc-image" src="@img/schedule/macbook.jpg" alt="personal computer background image">
+						<div data-watch data-watch-threshold="0.01" class="schedule__content-block block-text-container">
 							<h2 class="block-text-container__main-title">
 								Schedule Your Post Whenever You Want
 							</h2>
@@ -60,7 +60,7 @@
 				</section>
 				<section class="performance">
 					<div class="performance__container">
-						<div class="performance__title-block block-text-container">
+						<div data-watch data-watch-threshold="0.01" class="performance__title-block block-text-container">
 							<h2 class="block-text-container__main-title">
 								Track any hashtag(s) Performance
 							</h2>
@@ -69,7 +69,7 @@
 								Simplify workflows, reduce errors, and save time.
 							</div>
 						</div>
-						<div class="performance__cards-container cards-container">
+						<div data-watch data-watch-threshold="0.01" class="performance__cards-container cards-container">
 							<div class="cards-container__card">
 								<div class="cards-container__card-icon-container cards-container__card-icon-container_red">
 									<img class="cards-container__card-icon" src="@img/performance/first-icon.png" alt="decor icon">
@@ -119,7 +119,7 @@
 				</section>
 				<section class="reviews">
 					<div class="reviews__container">
-						<div class="reviews__text-content block-text-container">
+						<div data-watch data-watch-threshold="0.01" class="reviews__text-content block-text-container">
 							<h2 class="block-text-container__main-title">
 								Powering the growth of 100+ business & retailers in Indonesia.
 							</h2>
@@ -127,7 +127,7 @@
 								From single store, startups, to large multi-store brands.
 							</div>
 						</div>
-						<div class="reviews__right-container">
+						<div data-watch data-watch-threshold="0.01" class="reviews__right-container">
 							<button type="button" class="swiper-button-prev">
 								<img class="swiper-button-prev__white-arrow _hidden" src="@img/reviews/white-arrow.svg" alt="slider button left">
 								<img class="swiper-button-prev__blue-arrow" src="@img/reviews/blue-arrow.svg" alt="slider button left">
@@ -262,13 +262,12 @@
 								<img class="swiper-button-next__blue-arrow" src="@img/reviews/blue-arrow.svg" alt="slider button right">
 							</button>
 						</div>
-						</div>
 					</div>
 					<div class="swiper-pagination"></div>
 					<div class="swiper-scrollbar"></div>
 				</section>
 				<section class="grow">
-					<div class="grow__container">
+					<div data-watch data-watch-threshold="0.01"  class="grow__container">
 						<img class="grow__lines-bg-image" src="@img/grow/lines.png" alt="background lines decor element">
 						<div class="grow__text-content">
 							<h2 class="grow__title">

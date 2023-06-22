@@ -1,0 +1,104 @@
+// Top header animation
+@keyframes topHeaderAnimation {
+	0% {
+		transform: translateX(0vw) translateY(-20vw);
+	}
+	100% {
+		transform: translateX(0vw) translateY(0vw);
+	}
+}
+.top-header-animation {
+	animation-name: topHeaderAnimation;
+	animation-duration: 1s;
+	animation-timing-function: ease;
+}
+
+//Background images animation
+@keyframes backgorundLeftFirst {
+	0% {
+		transform: translateX(50vw) translateY(50vw) rotate(-120deg);
+	}
+	100% {
+		transform: translateX(0vw) translateY(0vw) rotate(0deg);
+	}
+}
+.background-first-left-animation {
+	animation-name: backgorundLeftFirst;
+	animation-duration: 1s;
+	animation-timing-function: ease;
+}
+
+
+@keyframes backgorundRightFirst {
+	0% {
+		transform: translateX(-50vw) translateY(-50vw) rotate(120deg);
+	}
+	100% {
+		transform: translateX(0vw) translateY(0vw) rotate(0deg);
+	}
+}
+.background-first-right-animation {
+	animation-name: backgorundRightFirst;
+	animation-duration: 1s;
+	animation-timing-function: ease;
+}
+
+
+@keyframes backgorundLeftSecond {
+	0% {
+		transform: translateX(-200vw) translateY(50vw) rotate(-700deg);
+	}
+	100% {
+		transform: translateX(0vw) translateY(0vw) rotate(0deg);
+	}
+}
+.background-second-left-animation {
+	animation-name: backgorundLeftSecond;
+	animation-duration: 1s;
+	animation-timing-function: ease;
+}
+
+
+@keyframes backgorundLeftThird {
+	0% {
+		transform: translateX(50vw) translateY(-50vw) rotate(-20deg);
+	}
+	100% {
+		transform: translateX(0vw) translateY(0vw) rotate(0deg);
+	}
+}
+.background-third-left-animation {
+	animation-name: backgorundLeftThird;
+	animation-duration: 1s;
+	animation-timing-function: ease;
+}
+
+// Text block animations
+@keyframes leftTextBlockAnimation {
+	0% {
+		transform: translateX(-100vw) translateY(0vw);
+	}
+	100% {
+		transform: translateX(0vw) translateY(0vw);
+	}
+}
+.left-text-animation {
+	animation-name: leftTextBlockAnimation;
+	animation-duration: 1s;
+	animation-timing-function: ease;
+}
+
+
+@keyframes rightTextBlockAnimation {
+	0% {
+		transform: translateX(100vw) translateY(0vw);
+	}
+	100% {
+		transform: translateX(0vw) translateY(0vw);
+	}
+}
+.right-text-animation {
+	animation-name: rightTextBlockAnimation;
+	animation-duration: 1s;
+	animation-timing-function: ease;
+}

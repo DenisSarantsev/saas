@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230622122327">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230622190637">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +16,7 @@
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__container">
-				<div class="header__top header-menu">
+				<div class="header__top header-menu top-header-animation">
 					<a href="#" class="header-menu__logo">
 						<img src="img/logo.png" alt="logo">
 					</a>
@@ -37,11 +37,11 @@
 					</div>
 				</div>
 				<div class="header__bottom header-main">
-					<img data-prlx-mouse data-prlx-dxy data-prlx-a="1" class="header-main__circle-image" src="img/header/circle.png" alt="circle decor image">
-					<img data-prlx-mouse data-prlx-dxy data-prlx-a="5" class="header-main__biggest-bg" src="img/header/biggest-bg-image.png" alt="interface image">
-					<img data-prlx-mouse data-prlx-dxy data-prlx-a="10" class="header-main__top-bg" src="img/header/top-bg-image.jpg" alt="socials statuses image">
-					<img data-prlx-mouse data-prlx-dxy data-prlx-a="10" class="header-main__bottom-bg" src="img/header/bottom-bg-image.jpg" alt="days counter image">
-					<div class="header-main__content main-content">
+					<img data-prlx-mouse data-prlx-dxy data-prlx-a="1" class="header-main__circle-image background-left-animation" src="img/header/circle.png" alt="circle decor image">
+					<img data-prlx-mouse data-prlx-dxy data-prlx-a="5" class="header-main__biggest-bg background-first-left-animation" src="img/header/biggest-bg-image.png" alt="interface image">
+					<img data-prlx-mouse data-prlx-dxy data-prlx-a="10" class="header-main__top-bg background-third-left-animation" src="img/header/top-bg-image.jpg" alt="socials statuses image">
+					<img data-prlx-mouse data-prlx-dxy data-prlx-a="10" class="header-main__bottom-bg background-second-left-animation" src="img/header/bottom-bg-image.jpg" alt="days counter image">
+					<div class="header-main__content main-content left-text-animation">
 						<h1 class="main-content__title">
 							We help you grow your business faster
 						</h1>
@@ -64,7 +64,7 @@
 		</header>
 		<main class="page">
 			<section class="brands">
-				<div class="brands__container">
+				<div data-watch class="brands__container">
 					<img class="brands__image" src="img/brands/slack.jpg" alt="slack logo">
 					<img class="brands__image" src="img/brands/netflix.jpg" alt="netflix logo">
 					<img class="brands__image" src="img/brands/google.jpg" alt="google logo">
@@ -74,9 +74,9 @@
 			</section>
 			<section class="impressions">
 				<div class="impressions__container">
-					<img class="impressions__arrow-image" src="img/impressions/arrow.jpg" alt="arrow decor image">
-					<img class="impressions__phones-image" src="img/impressions/phones.png" alt="phones dcor image">
-					<div class="impressions__content-block block-text-container">
+					<img data-watch class="impressions__arrow-image" src="img/impressions/arrow.jpg" alt="arrow decor image">
+					<img data-watch class="impressions__phones-image" src="img/impressions/phones.png" alt="phones dcor image">
+					<div data-watch class="impressions__content-block block-text-container">
 						<h2 class="block-text-container__main-title">
 							Measure Impressions and Reach Post
 						</h2>
@@ -93,8 +93,8 @@
 			</section>
 			<section class="schedule">
 				<div class="schedule__container">
-					<img class="schedule__pc-image" src="img/schedule/macbook.jpg" alt="personal computer background image">
-					<div class="schedule__content-block block-text-container">
+					<img data-watch data-watch-threshold="0.01" class="schedule__pc-image" src="img/schedule/macbook.jpg" alt="personal computer background image">
+					<div data-watch data-watch-threshold="0.01" class="schedule__content-block block-text-container">
 						<h2 class="block-text-container__main-title">
 							Schedule Your Post Whenever You Want
 						</h2>
@@ -116,7 +116,7 @@
 			</section>
 			<section class="performance">
 				<div class="performance__container">
-					<div class="performance__title-block block-text-container">
+					<div data-watch data-watch-threshold="0.01" class="performance__title-block block-text-container">
 						<h2 class="block-text-container__main-title">
 							Track any hashtag(s) Performance
 						</h2>
@@ -125,7 +125,7 @@
 							Simplify workflows, reduce errors, and save time.
 						</div>
 					</div>
-					<div class="performance__cards-container cards-container">
+					<div data-watch data-watch-threshold="0.01" class="performance__cards-container cards-container">
 						<div class="cards-container__card">
 							<div class="cards-container__card-icon-container cards-container__card-icon-container_red">
 								<img class="cards-container__card-icon" src="img/performance/first-icon.png" alt="decor icon">
@@ -175,7 +175,7 @@
 			</section>
 			<section class="reviews">
 				<div class="reviews__container">
-					<div class="reviews__text-content block-text-container">
+					<div data-watch data-watch-threshold="0.01" class="reviews__text-content block-text-container">
 						<h2 class="block-text-container__main-title">
 							Powering the growth of 100+ business & retailers in Indonesia.
 						</h2>
@@ -183,7 +183,7 @@
 							From single store, startups, to large multi-store brands.
 						</div>
 					</div>
-					<div class="reviews__right-container">
+					<div data-watch data-watch-threshold="0.01" class="reviews__right-container">
 						<button type="button" class="swiper-button-prev">
 							<img class="swiper-button-prev__white-arrow _hidden" src="img/reviews/white-arrow.svg" alt="slider button left">
 							<img class="swiper-button-prev__blue-arrow" src="img/reviews/blue-arrow.svg" alt="slider button left">
@@ -319,122 +319,121 @@
 						</button>
 					</div>
 				</div>
-	</div>
-	<div class="swiper-pagination"></div>
-	<div class="swiper-scrollbar"></div>
-	</section>
-	<section class="grow">
-		<div class="grow__container">
-			<img class="grow__lines-bg-image" src="img/grow/lines.png" alt="background lines decor element">
-			<div class="grow__text-content">
-				<h2 class="grow__title">
-					Grow your brand presence on social media
-				</h2>
-				<div class="grow__subtitle">
-					Join with more 1200+ happy customers
-				</div>
-				<div class="grow__bottom-container">
-					<img class="grow__peoples-image" src="img/grow/peoples.png" alt="peoples socials profiles">
-					<a class="grow__link" href="#">and others</a>
-				</div>
-			</div>
-			<button class="grow__button">
-				Get your trial now
-			</button>
-		</div>
-	</section>
-	</main>
-	<footer class="footer">
-		<div class="footer__container">
-			<div class="footer__top footer-top">
-				<div class="footer-top__socials-block">
-					<a href="#"><img src="img/logo.png" alt="logo" class="footer-top__logo"></a>
-					<div class="footer-top__description">
-						Build a modern and creative website with crealand
+				<div class="swiper-pagination"></div>
+				<div class="swiper-scrollbar"></div>
+			</section>
+			<section class="grow">
+				<div data-watch data-watch-threshold="0.01" class="grow__container">
+					<img class="grow__lines-bg-image" src="img/grow/lines.png" alt="background lines decor element">
+					<div class="grow__text-content">
+						<h2 class="grow__title">
+							Grow your brand presence on social media
+						</h2>
+						<div class="grow__subtitle">
+							Join with more 1200+ happy customers
+						</div>
+						<div class="grow__bottom-container">
+							<img class="grow__peoples-image" src="img/grow/peoples.png" alt="peoples socials profiles">
+							<a class="grow__link" href="#">and others</a>
+						</div>
 					</div>
-					<div class="footer-top__socials-container socials-container">
-						<a href="#">
-							<div class="socials-container__icon-container">
-								<img src="img/footer/google-icon.svg" alt="google icon">
-							</div>
-						</a>
-						<a href="#">
-							<div class="socials-container__icon-container">
-								<img src="img/footer/twitter-icon.svg" alt="twitter icon">
-							</div>
-						</a>
-						<a href="#">
-							<div class="socials-container__icon-container">
-								<img src="img/footer/instagram-icon.svg" alt="instagram icon">
-							</div>
-						</a>
-						<a href="#">
-							<div class="socials-container__icon-container">
-								<img src="img/footer/linkedin-icon.svg" alt="linkedin icon">
-							</div>
-						</a>
+					<button class="grow__button">
+						Get your trial now
+					</button>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__top footer-top">
+					<div class="footer-top__socials-block">
+						<a href="#"><img src="img/logo.png" alt="logo" class="footer-top__logo"></a>
+						<div class="footer-top__description">
+							Build a modern and creative website with crealand
+						</div>
+						<div class="footer-top__socials-container socials-container">
+							<a href="#">
+								<div class="socials-container__icon-container">
+									<img src="img/footer/google-icon.svg" alt="google icon">
+								</div>
+							</a>
+							<a href="#">
+								<div class="socials-container__icon-container">
+									<img src="img/footer/twitter-icon.svg" alt="twitter icon">
+								</div>
+							</a>
+							<a href="#">
+								<div class="socials-container__icon-container">
+									<img src="img/footer/instagram-icon.svg" alt="instagram icon">
+								</div>
+							</a>
+							<a href="#">
+								<div class="socials-container__icon-container">
+									<img src="img/footer/linkedin-icon.svg" alt="linkedin icon">
+								</div>
+							</a>
+						</div>
+					</div>
+					<nav data-spollers="580,max" data-one-spoller class="footer-top__spollers spollers">
+						<details class="spollers__item">
+							<summary class="spollers__title">
+								<button type="button" data-spoller>Product</button>
+							</summary>
+							<ul class="spollers__body">
+								<li><a href="#">Landingpage</a></li>
+								<li><a href="#">Features</a></li>
+								<li><a href="#">Documentation</a></li>
+								<li><a href="#">Referral Program</a></li>
+								<li><a href="#">Pricing</a></li>
+							</ul>
+						</details>
+						<details class="spollers__item">
+							<summary class="spollers__title">
+								<button type="button" data-spoller>Services</button>
+							</summary>
+							<ul class="spollers__body">
+								<li><a href="#">Documentation</a></li>
+								<li><a href="#">Design</a></li>
+								<li><a href="#">Themes</a></li>
+								<li><a href="#">Illustrations</a></li>
+								<li><a href="#">UI Kit</a></li>
+							</ul>
+						</details>
+						<details class="spollers__item">
+							<summary class="spollers__title">
+								<button type="button" data-spoller>Company</button>
+							</summary>
+							<ul class="spollers__body">
+								<li><a href="#">About</a></li>
+								<li><a href="#">Terms</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+								<li><a href="#">Careers</a></li>
+							</ul>
+						</details>
+						<details class="spollers__item">
+							<summary class="spollers__title">
+								<button type="button" data-spoller>More</button>
+							</summary>
+							<ul class="spollers__body">
+								<li><a href="#">Documentation</a></li>
+								<li><a href="#">License</a></li>
+								<li><a href="#">Changelog</a></li>
+							</ul>
+						</details>
+					</nav>
+				</div>
+				<div class="footer__bottom footer-bottom">
+					<div class="footer-bottom__heart-container">
+						<img src="img/footer/heart-icon.png" alt="heart icon">
+					</div>
+					<div class="footer-bottom__copyright">
+						Copyright © 2021. Crafted with love.
 					</div>
 				</div>
-				<nav data-spollers="580,max" data-one-spoller class="footer-top__spollers spollers">
-					<details class="spollers__item">
-						<summary class="spollers__title">
-							<button type="button" data-spoller>Product</button>
-						</summary>
-						<ul class="spollers__body">
-							<li><a href="#">Landingpage</a></li>
-							<li><a href="#">Features</a></li>
-							<li><a href="#">Documentation</a></li>
-							<li><a href="#">Referral Program</a></li>
-							<li><a href="#">Pricing</a></li>
-						</ul>
-					</details>
-					<details class="spollers__item">
-						<summary class="spollers__title">
-							<button type="button" data-spoller>Services</button>
-						</summary>
-						<ul class="spollers__body">
-							<li><a href="#">Documentation</a></li>
-							<li><a href="#">Design</a></li>
-							<li><a href="#">Themes</a></li>
-							<li><a href="#">Illustrations</a></li>
-							<li><a href="#">UI Kit</a></li>
-						</ul>
-					</details>
-					<details class="spollers__item">
-						<summary class="spollers__title">
-							<button type="button" data-spoller>Company</button>
-						</summary>
-						<ul class="spollers__body">
-							<li><a href="#">About</a></li>
-							<li><a href="#">Terms</a></li>
-							<li><a href="#">Privacy Policy</a></li>
-							<li><a href="#">Careers</a></li>
-						</ul>
-					</details>
-					<details class="spollers__item">
-						<summary class="spollers__title">
-							<button type="button" data-spoller>More</button>
-						</summary>
-						<ul class="spollers__body">
-							<li><a href="#">Documentation</a></li>
-							<li><a href="#">License</a></li>
-							<li><a href="#">Changelog</a></li>
-						</ul>
-					</details>
-				</nav>
 			</div>
-			<div class="footer__bottom footer-bottom">
-				<div class="footer-bottom__heart-container">
-					<img src="img/footer/heart-icon.png" alt="heart icon">
-				</div>
-				<div class="footer-bottom__copyright">
-					Copyright © 2021. Crafted with love.
-				</div>
-			</div>
-		</div>
-	</footer>
+		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230622122327"></script>
+	<script src="js/app.min.js?_v=20230622190637"></script>
 </body>
 
 </html>
